@@ -3,7 +3,7 @@
 """
 
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, RedirectResponse, PlainTextResponse
 from fastapi.templating import Jinja2Templates
 
 from app.config.config import settings
@@ -66,6 +66,16 @@ def setup_page_routes(app: FastAPI) -> None:
     Args:
         app: FastAPI应用程序实例
     """
+
+    @app.get("/robots.txt", response_class=PlainTextResponse)
+    async def robots_txt():
+        """提供robots.txt文件"""
+        try:
+            with open("robots.txt", "r", encoding="utf-8") as f:
+                return f.read()
+        except FileNotFoundError:
+            # 如果文件不存在，返回默认的禁止所有爬虫的内容
+            return "User-agent: *\nDisallow: /"
 
     @app.get("/", response_class=HTMLResponse)
     async def auth_page(request: Request):

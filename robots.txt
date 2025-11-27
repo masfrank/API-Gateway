@@ -1,0 +1,58 @@
+# robots.txt - Prevent search engine crawlers
+# This is a private API proxy service and should not be indexed by search engines
+
+# Disallow all crawlers from accessing all pages
+User-agent: *
+Disallow: /
+
+# Specifically disallow sensitive pages
+Disallow: /auth
+Disallow: /keys_status
+Disallow: /config
+Disallow: /error_logs
+Disallow: /api/
+Disallow: /gemini/
+Disallow: /openai/
+Disallow: /hf/
+Disallow: /vertex/
+
+# Allow access to static resources (optional, comment out if you want to completely disallow)
+# Allow: /static/
+
+# Explicitly disallow major search engines
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: facebot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+

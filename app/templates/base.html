@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Gemini Balance{% endblock %}</title>
+    <title>{% block title %}API Gateway{% endblock %}</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
     <link rel="manifest" href="{{ static_url('manifest.json') }}" />
     <meta name="theme-color" content="#4F46E5" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="GBalance" />
+    <meta name="apple-mobile-web-app-title" content="API-GW" />
     <link rel="icon" href="{{ static_url('icons/icon-192x192.png') }}" />
     <link
       href="{{ static_url('css/fonts.css') }}"
@@ -468,57 +470,20 @@
     <div
       class="fixed bottom-0 left-0 w-full py-3 bg-white bg-opacity-95 backdrop-blur-md text-sm text-gray-800 border-t border-gray-200 flex flex-col items-center space-y-1"
     >
-      <!-- 第一行 -->
+      <!-- 版权信息 -->
       <div class="flex items-center justify-center space-x-2">
-        <span>© <span id="copyright-year"></span> by</span>
-        <a
-          href="https://linux.do/u/snaily"
-          target="_blank"
-          class="text-primary-600 hover:text-primary-800 transition duration-300 flex items-center"
-        >
-          <img
-            src="https://linux.do/user_avatar/linux.do/snaily/288/306510_2.gif"
-            alt="snaily"
-            class="inline-block w-5 h-5 rounded-full align-middle mr-1"
-          />snaily
-        </a>
+        <span class="text-gray-600">© <span id="copyright-year"></span> API Gateway</span>
         <span class="text-gray-400">|</span>
-        <a
-          href="https://github.com/snailyp/gemini-balance"
-          target="_blank"
-          class="text-primary-600 hover:text-primary-800 transition duration-300 flex items-center"
-        >
-          <i class="fab fa-github mr-1"></i> GitHub
-        </a>
+        <span class="text-gray-600">All Rights Reserved</span>
       </div>
-      <!-- 第二行 -->
+      <!-- 系统信息 -->
       <div class="flex items-center justify-center space-x-2 text-xs">
-        <a
-          href="https://gb-docs.snaily.top/guide/supportme.html"
-          target="_blank"
-          class="text-primary-600 hover:text-primary-800 transition duration-300 flex items-center"
-        >
-          <i class="fas fa-drumstick-bite text-yellow-600 mr-1"></i> 给作者加鸡腿
-        </a>
+        <span class="text-gray-500">
+          <i class="fas fa-server mr-1"></i>系统运行正常
+        </span>
         <span class="text-gray-400">|</span>
-        <a
-          href="https://gb-docs.snaily.top"
-          target="_blank"
-          class="text-primary-600 hover:text-primary-800 transition duration-300 flex items-center"
-        >
-          <i class="fas fa-book mr-1"></i> 在线文档
-        </a>
-<span class="text-gray-400">|</span>
-        <a
-          href="https://t.me/+soaHax5lyI0wZDVl"
-          target="_blank"
-          class="text-primary-600 hover:text-primary-800 transition duration-300 flex items-center"
-        >
-          <i class="fab fa-telegram-plane mr-1"></i> 交流群
-        </a>
-        <span class="text-gray-400">|</span>
-        <span class="text-yellow-600 font-semibold flex items-center">
-          <i class="fas fa-exclamation-triangle mr-1"></i>免费项目，谨防诈骗
+        <span class="text-gray-500">
+          <i class="fas fa-shield-alt mr-1"></i>安全访问
         </span>
         <span id="version-info-container" class="inline-flex items-center">
           <!-- Version info will be loaded here by JavaScript -->

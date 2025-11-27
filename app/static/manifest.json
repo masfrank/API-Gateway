@@ -1,7 +1,7 @@
 {
-  "name": "Gemini Balance",
-  "short_name": "GBalance",
-  "description": "Gemini API密钥管理工具",
+  "name": "API Gateway",
+  "short_name": "API-GW",
+  "description": "API代理和负载均衡工具",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#667eea",

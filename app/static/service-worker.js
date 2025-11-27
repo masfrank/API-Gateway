@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gbalance-cache-v1';
+const CACHE_NAME = 'api-gateway-cache-v1';
 const urlsToCache = [
   '/',
   '/static/manifest.json',
